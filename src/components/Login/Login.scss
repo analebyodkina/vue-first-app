@@ -1,0 +1,81 @@
+@import  '../../assets/scss/vars';
+@import  '../../assets/scss/mixins';
+.login {
+    max-width: 500px;
+    padding: 0 70px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include tablet-992 {
+        padding: 0;
+        justify-content: flex-start;
+        margin-top: 56px;
+    }
+    &__title {
+        @include text ($ff, 40px, 48px, 700, $color-secondary); 
+        letter-spacing: 0.01em;
+        text-transform: capitalize;
+        margin-bottom: 8px;
+        @include mobile-576 {
+            @include text ($ff, 32px, 39px, 700, $color-secondary); 
+            
+        }
+    }
+    &__desc {
+        @include text ($ff, 16px, 24px, 400, $color-accent);
+        margin-bottom: 56px;
+        @include mobile-576 {
+            font-size: 14px;            
+        }        
+    }
+    &__google {
+        margin-top: 16px;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: 1px solid #D0D5DD;
+        border-radius: 8px;
+        @include text ($ff, 16px, 20px, 500, $color-secondary);
+    }
+    &__sign-up {
+        @include text ($ff, 14px, 24px, 400, $color-secondary);
+        margin-top: 20px;
+        text-align: center;
+        @include tablet-992 {
+            margin-bottom: 40px;
+        }
+        span a {
+            color: $color-primary;            
+        }
+    }
+}
+.form{    
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+    a{
+        @include text ($ff, 14px, 20px, 500, $color-primary); 
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+._secondary {
+    background: transparent;
+    border: 1px solid #D0D5DD;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9.5px;
+    padding: 11.5px 0; 
+    .btn__text {
+        @include text ($ff, 16px, 20px, 500, $color-secondary);
+    }
+     
+}

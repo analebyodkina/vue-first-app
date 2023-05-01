@@ -1,0 +1,18 @@
+.item {
+    margin: 20px;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    &.active {
+        background: lime;
+    }
+}
+.pink {
+    margin: 20px;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    &.active {
+        background: pink;
+    }
+}

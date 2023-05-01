@@ -1,0 +1,31 @@
+;
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.wrapper {
+    max-width: 1440px;    
+    margin-inline: auto;
+    
+}
+body {
+    font-family: $ff;    
+    margin: 0;    
+}
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0; 
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+ul {
+    list-style: none;
+}
+button {
+    padding: 0;
+}

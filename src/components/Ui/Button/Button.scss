@@ -1,0 +1,15 @@
+@import  '../../../assets/scss/vars';
+@import  '../../../assets/scss/mixins';
+.btn {
+    padding: 12px 0; 
+    background: $color-primary;
+    border-radius: 8px;
+    width: 100%;
+    border: 0;
+    outline: 0;    
+    cursor: pointer;
+    &__text {
+        @include text ($ff, 16px, 20px, 500, $color-white);
+    }
+}
+

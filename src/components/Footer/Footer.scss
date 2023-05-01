@@ -1,0 +1,9 @@
+@import  '../../assets/scss/vars';
+@import  '../../assets/scss/mixins';
+.copyright {    
+      @include text ($ff, 16px, 20px, 400, $color-accent);
+      font-style: italic;
+      @include tablet-992 {
+        display: none;            
+    }       
+}

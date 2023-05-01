@@ -1,0 +1,16 @@
+@import  '../../assets/scss/vars';
+@import  '../../assets/scss/mixins';
+.logo {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    cursor: pointer;
+    @include tablet-992 {
+        flex-direction: column;
+        padding-top: 90px;
+    }
+    &__text {
+        @include text ($ff, 16px, 19px, 500, $color-black);
+        letter-spacing: 0.01em;
+    }
+}
