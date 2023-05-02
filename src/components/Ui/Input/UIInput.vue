@@ -6,8 +6,14 @@
         :type="inputType"  v-model="inputValue"
         v-bind:placeholder="placeholder"              
       />
-      <span className='form__icon' v-on:click="toggleInputType">
+      <span className='form__icon'>
+        {{icon}}
+      </span>
+      <span v-on:click="toggleInputType">
         change type
+      </span>
+      <span v-on:click="clearInputValue">
+        clear
       </span>
   </label>                 
        
@@ -40,6 +46,9 @@ export default {
   methods: {
     toggleInputType() {
       this.inputType = this.inputType === 'text' ? 'password' : 'text';
+    },
+    clearInputValue() {
+      this.inputValue = '';
     }
   } 
   // components: { 

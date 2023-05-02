@@ -17,8 +17,7 @@
         text-transform: capitalize;
         margin-bottom: 8px;
         @include mobile-576 {
-            @include text ($ff, 32px, 39px, 700, $color-secondary); 
-            
+            @include text ($ff, 32px, 39px, 700, $color-secondary);             
         }
     }
     &__desc {
@@ -63,7 +62,7 @@
         &:hover {
             text-decoration: underline;
         }
-    }
+    }    
 }
 ._secondary {
     background: transparent;
