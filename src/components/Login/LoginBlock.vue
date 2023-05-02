@@ -10,7 +10,7 @@
             :title="'Email'"
             placeholder="debra.holt@example.com"
             type="email"
-            icon="123"
+            :icon="CloseIcon"
           />
           <!-- <Input
             title="Password"
