@@ -1,0 +1,32 @@
+@import  '../../../assets/scss/vars';
+@import  '../../../assets/scss/mixins';
+.form {
+    &__field {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-width: 360px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    &__icon svg {
+        position: absolute;
+        right: 14px;
+        top: 43px;
+    }
+    &__title {
+        @include text ($ff, 14px, 20px, 500, $color-secondary); 
+    }
+
+    &__input {
+        border: 1px solid #D0D5DD;
+        border-radius: 8px;
+        outline: 0;
+        padding: 10px 14px;
+        cursor: pointer;
+        @include text ($ff, 16px, 24px, 400, $color-secondary); 
+        &::placeholder {
+            @include text ($ff, 16px, 24px, 400, $color-accent); 
+        }
+    }
+}

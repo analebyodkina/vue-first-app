@@ -6,13 +6,13 @@
       </div>
 
         <form action="get" className="form">
-          <!-- <Input
-            title="Email"
+          <UIInput
+            :title="'Email'"
             placeholder="debra.holt@example.com"
             type="email"
-            icon={<CloseIcon />}
+            icon="123"
           />
-          <Input
+          <!-- <Input
             title="Password"
             placeholder="••••••••"
             type="password"
@@ -42,12 +42,16 @@
 
 <script>
 import UiCheckbox from '@/components/Ui/Checkbox/UiCheckbox.vue';
+// import CloseIcon from '@/components/Icons/CloseIcon.vue';
+import UIInput from '../Ui/Input/UIInput.vue';
 
 export default {
   name: 'LoginBlock', 
-  components: { 
-        UiCheckbox,
-     } 
+  components: {
+    UiCheckbox,
+    // CloseIcon,
+    UIInput
+} 
 };
 </script>
 
