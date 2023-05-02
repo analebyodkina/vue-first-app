@@ -1,11 +1,22 @@
 <template>
-  <div class="btn">button works</div>
+  <button className="btn">
+      <span className="btn__icon">{{ btnIcon }}</span>       
+      <span className="btn__text">{{ title }}</span>      
+    </button>
 </template>
 
 
 <script>
 export default {
-  name: 'UiButton',  
+  name: 'UiButton', 
+  props: {
+    title: {
+      type:String
+    },
+    btnIcon: {
+      type: Object
+    }   
+  }  
 };
 </script>
 

@@ -10,7 +10,7 @@
             :title="'Email'"
             placeholder="debra.holt@example.com"
             type="email"
-            :icon="GoogleIcon"
+            :icon="CloseIcon"
           />
           <UIInput
             :title="'Password'"
@@ -26,10 +26,13 @@
           <Button type="submit" title="Sign in"></Button>
           
         </form>
-        <Button addClass="_secondary"> 
-          <span><GoogleIcon /></span>  
-          Sign in with Google     
-        </Button>
+        <UiButton :title="'Sign in'" />
+
+        <UiButton className="_secondary" 
+        :title="'Sign in with Google '" 
+        :btnIcon="GoogleIcon"> 
+                       
+        </UiButton>
         
         <div className="login__sign-up">
           Don’t have an account?
@@ -44,7 +47,8 @@
 
 <script>
 import UiCheckbox from '@/components/Ui/Checkbox/UiCheckbox.vue';
-// import CloseIcon from '@/components/Icons/CloseIcon.vue'
+import UiButton from '@/components/Ui/Button/UiButton.vue';
+import CloseIcon from '@/components/Icons/CloseIcon.vue'
 import UIInput from '../Ui/Input/UIInput.vue';
 import GoogleIcon from '../Icons/GoogleIcon.vue';
 
@@ -53,12 +57,11 @@ export default {
   components: {
     UiCheckbox,    
     UIInput,
-    GoogleIcon,
-    // CloseIcon
+    UiButton    
   },
   data() {
     return {
-      // CloseIcon,
+      CloseIcon,
       GoogleIcon
     }
   } 

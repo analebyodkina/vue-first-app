@@ -75,6 +75,5 @@
     padding: 11.5px 0; 
     .btn__text {
         @include text ($ff, 16px, 20px, 500, $color-secondary);
-    }
-     
+    }     
 }

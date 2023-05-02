@@ -50,10 +50,7 @@ export default {
     clearInputValue() {
       this.inputValue = '';
     }
-  } 
-  // components: { 
-  //       LogoIcon,
-  //    } 
+  }   
 };
 </script>
 
